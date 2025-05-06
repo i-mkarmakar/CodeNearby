@@ -64,7 +64,7 @@ export default function Header() {
     router.push(/search?q=${encodeURIComponent("${query}")});
     setShowSearch(false);
   };
-  
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
